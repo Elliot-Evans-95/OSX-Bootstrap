@@ -4,7 +4,13 @@ osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
 githubAccount="Elliot-Evans-95"
 home="~/"
 
-source "$osx_bootstrap/modules/functions.bash"
+echo
+echo "**********************************************************************"
+echo "****              Cloning dotfiles from repo                      ****"
+echo "**********************************************************************"
+echo
+
+source "./functions.bash"
 
 echo "Installing bash dotfiles"
 

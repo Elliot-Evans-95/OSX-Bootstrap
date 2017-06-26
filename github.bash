@@ -1,7 +1,13 @@
 #!/bin/bash
 
 osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
-source "$osx_bootstrap/modules/functions.bash"
+source "./functions.bash"
+
+echo
+echo "**********************************************************************"
+echo "****                  Connecting to Github.                       ****"
+echo "**********************************************************************"
+echo
 
 if [[ ! -f ~/.ssh/id_rsa ]]; then
     echo ''

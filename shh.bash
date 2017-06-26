@@ -3,7 +3,13 @@
 osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
 githubAccount="Elliot-Evans-95"
 
-source "$osx_bootstrap/modules/functions.bash"
+source "./functions.bash"
+
+echo
+echo "**********************************************************************"
+echo "****                   Creating SSH Key.                          ****"
+echo "**********************************************************************"
+echo
 
 info_echo "Checking for SSH key, generating one if it doesn't exist"
 [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa

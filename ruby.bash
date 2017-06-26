@@ -3,7 +3,13 @@
 osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
 ruby_version="2.3.1"
 
-source "$osx_bootstrap/modules/functions.bash"
+source "./functions.bash"
+
+echo
+echo "**********************************************************************"
+echo "****              Updating Ruby to the latest version.            ****"
+echo "**********************************************************************"
+echo
 
 info_echo "Enable rbenv alias"
 eval "$(rbenv init -)"

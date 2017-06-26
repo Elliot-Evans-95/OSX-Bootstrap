@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
 osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
-source "$osx_bootstrap/modules/functions.bash"
+source "./functions.bash"
+
+echo
+echo "**********************************************************************"
+echo "****                  Installing Homebrew.                        ****"
+echo "**********************************************************************"
+echo
 
 if test ! "$(which brew)"; then
   info_echo "Install Homebrew, a good OS X package manager"

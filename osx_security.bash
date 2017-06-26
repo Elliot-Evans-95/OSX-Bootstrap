@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
 osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
-source "$osx_bootstrap/modules/functions.bash"
+source "./functions.bash"
+
+echo
+echo "**********************************************************************"
+echo "****              Configurating OSX Security.                     ****"
+echo "**********************************************************************"
+echo
 
 info_echo "Run osxlockdown"
 sudo vendor/osxlockdown/osxlockdown -remediate -commands_file vendor/osxlockdown/commands.yaml

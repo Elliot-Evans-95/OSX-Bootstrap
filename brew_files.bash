@@ -5,6 +5,12 @@
 #  RBENV_ROOT=/usr/local/var/rbenv
 #  NVM_DIR=/usr/local/var/nvm
 
+echo
+echo "**********************************************************************"
+echo "****              Finding and installing Brew files.              ****"
+echo "**********************************************************************"
+echo
+
 # Flatstack Tools
 tap "fs/fstool"
 brew "fs-tool"
@@ -29,13 +35,17 @@ brew "zsh-syntax-highlighting"
 # Essential Mac applications
 tap "caskroom/cask"
 tap "caskroom/versions"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/dupes"
+tap "homebrew/services"
+tap "homebrew/versions"
 
 cask "java"
-cask "iterm2"
 cask "the-unarchiver"
 cask "google-chrome"
-cask "spectacle"
 cask "dash"
+cask "hyper"
 
 # Essintial Node Utilites
 brew "nvm"

@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
 osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
-source "$osx_bootstrap/modules/functions.bash"
+source "./functions.bash"
+
+echo
+echo "**********************************************************************"
+echo "****                Setting OSX Defaults.                         ****"
+echo "**********************************************************************"
+echo
 
 info_echo "Set OS X defaults"
 osascript -e 'tell application "System Preferences" to quit'
@@ -233,25 +239,6 @@ defaults write com.apple.dock show-process-indicators -bool true
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
 defaults write com.apple.dock persistent-apps -array
-
-# Add applications to Dock
-for app in \
-  System \ Finder
-  Siri \
-  Chrome \
-  Slack \
-  Hyper \
-  Discord \
-  Gogland \
-  Webstorm \
-  Fantistical 2 \
-  OmniFocus \
-  Sketch \
-  MacPass \
-  Final Cut Pro \
-do
-  defaults write com.apple.dock "persistent-apps" -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$app.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-done
 
 # Show only open applications in the Dock
 defaults write com.apple.dock static-only -bool true
