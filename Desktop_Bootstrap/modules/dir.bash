@@ -25,4 +25,6 @@ if ! test ~/Apps exists ; then
   echo "Added Apps to Home Directory"
 fi
 
+echo
 echo "****************** Added Folders ******************"
+echo

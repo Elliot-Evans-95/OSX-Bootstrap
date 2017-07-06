@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Make sure you have following env variables
 # when using this Brewfile or use it with modules/brew.bash
 #
@@ -68,3 +70,7 @@ brew "glide"
 
 # Essintial C# Utilites
 brew "mono"
+
+echo
+echo "*********************** Installed Brew Files **************************"
+echo
