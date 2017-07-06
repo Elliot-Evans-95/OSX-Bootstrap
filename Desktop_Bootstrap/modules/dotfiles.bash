@@ -9,9 +9,13 @@ echo "****              Cloning dotfiles from repo                      ****"
 echo "**********************************************************************"
 echo
 
-echo "Installing bash dotfiles"
+cd $home
 
-cd $home && git clone https://github.com/${githubAccount}/dotfiles.git
+git init
+git remote add origin https://github.com/${githubAccount}/dotfiles.git
+git fetch
+git reset origin/master
+git checkout -t origin/master
 
 echo
 echo "********************* dotfiles now added *****************************"
