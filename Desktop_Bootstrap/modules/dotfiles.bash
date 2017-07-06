@@ -11,11 +11,15 @@ echo
 
 cd $home
 
+# git init
+# git remote add origin https://github.com/${githubAccount}/dotfiles.git
+# git fetch
+# git reset origin/master
+# git checkout -t -b master origin/master
+
 git init
 git remote add origin https://github.com/${githubAccount}/dotfiles.git
-git fetch
-git reset origin/master
-git checkout -t -b master origin/master
+git pull
 
 echo
 echo "********************* dotfiles now added *****************************"
