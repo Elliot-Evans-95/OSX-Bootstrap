@@ -2,7 +2,7 @@
 
 set -e
 
-OSX_BOOTSTRAP=${OSX_BOOTSTRAP:-"$HOME/.osx-bootstrap"}
+OSX_BOOTSTRAP=${OSX_BOOTSTRAP:-"$HOME/osx-bootstrap"}
 
 if [ ! -d "$OSX_BOOTSTRAP" ]
 then
@@ -25,7 +25,7 @@ modules=(
 
 for module in "${modules[@]}"
 do
-  bash "$OSX_BOOTSTRAP/modules/$module.bash"
+  bash "$OSX_BOOTSTRAP/Desktop_Bootstrap/modules/$module.bash"
 done
 
 echo
