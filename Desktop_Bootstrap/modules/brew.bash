@@ -18,13 +18,10 @@ fi
 
 echo "Checking on Homebrew"
 brew doctor
-
-echo "Setting up Homebrew for Bulk installation"
-brew tap caskroom/cask
-brew install caskroom/cask/brew-cask
+brew prune
 
 echo "Install Brew formalue"
-brew tap "Homebrew/bundle" 2> /dev/null
+brew tap Homebrew/bundle
 brew bundle --file="$osx_bootstrap/Brewfile"
 
 echo "Check Bundle List for updates"
