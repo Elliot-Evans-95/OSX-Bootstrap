@@ -12,14 +12,13 @@ fi
 modules=(
   dir
   ssh
-  brew
-  ruby
-  node
-  osx_defaults
-  osx_security
   github
   zsh
   dotfiles
+  brew
+  node
+  osx_defaults
+  osx_security
   dock
 )
 
