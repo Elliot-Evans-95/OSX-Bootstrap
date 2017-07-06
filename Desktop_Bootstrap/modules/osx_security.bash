@@ -8,9 +8,6 @@ echo "****              Configurating OSX Security.                     ****"
 echo "**********************************************************************"
 echo
 
-echo "Run osxlockdown"
-sudo vendor/osxlockdown/osxlockdown -remediate -commands_file vendor/osxlockdown/commands.yaml
-
 echo "Expose hidden files and Library folder in Finder"
 defaults write com.apple.finder AppleShowAllFiles -bool true
 chflags nohidden ~/Library

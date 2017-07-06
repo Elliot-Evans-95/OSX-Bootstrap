@@ -1,8 +1,8 @@
 #!/bin/bash
 
 osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
-github_user = "Elliot-Evans-95"
-github_email = "ell15evans.nuls@googlemail.com"
+github_user="Elliot-Evans-95"
+github_email="ell15evans.nuls@googlemail.com"
 
 echo
 echo "**********************************************************************"

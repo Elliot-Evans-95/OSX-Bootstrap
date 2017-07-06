@@ -3,9 +3,9 @@
 # Make sure you have following env variables
 # when using this Brewfile or use it with modules/brew.bash
 #
-#  HOMEBREW_CASK_OPTS="--appdir=/Applications"
-#  RBENV_ROOT=/usr/local/var/rbenv
-#  NVM_DIR=/usr/local/var/nvm
+HOMEBREW_CASK_OPTS="--appdir=/Applications"
+RBENV_ROOT=/usr/local/var/rbenv
+NVM_DIR=/usr/local/var/nvm
 
 echo
 echo "**********************************************************************"
