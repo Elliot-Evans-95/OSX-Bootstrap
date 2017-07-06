@@ -22,7 +22,7 @@ brew prune
 
 echo "Install Brew formalue"
 brew tap Homebrew/bundle
-brew bundle --file="$osx_bootstrap/Brewfile"
+brew bundle
 
 echo "Check Bundle List for updates"
 brew bundle check
