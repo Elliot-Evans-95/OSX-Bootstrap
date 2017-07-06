@@ -20,6 +20,9 @@ echo "Checking on Homebrew"
 brew doctor
 brew prune
 
+echo "adding Homebrew to PATH in bash"
+echo "export PATH=/usr/local/sbin:$PATH" >> ~/bash_profile
+
 echo "Install Brew formalue"
 cd modules
 brew tap Homebrew/bundle
