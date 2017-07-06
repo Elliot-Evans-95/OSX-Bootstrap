@@ -8,17 +8,17 @@ echo "****              Creating Development Folders.                   ****"
 echo "**********************************************************************"
 echo
 
-if ! test ~/Sites exists ; then
+if [! -e "~/Sites" ] ; then
   mkdir ~/Sites 
   echo "Added Sites to Home Directory"
 fi
 
-if ! test ~/Projects exists ; then
+if [! "~/Projects" ] ; then
   mkdir ~/Projects 
   echo "Added Projects to Home Directory"
 fi
 
-if ! test ~/Apps exists ; then
+if [! "~/Apps" ] ; then
   mkdir ~/Sites 
   mkdir ~/Projects 
   mkdir ~/Apps

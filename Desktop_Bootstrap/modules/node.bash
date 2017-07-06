@@ -19,3 +19,7 @@ nvm alias default node
 
 export npm_config_global=true
 export npm_config_loglevel=silent
+
+echo
+echo "********************* Node & NVM installed *****************************"
+echo

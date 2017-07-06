@@ -8,7 +8,7 @@ echo "****                Setting OSX Defaults.                         ****"
 echo "**********************************************************************"
 echo
 
-info_echo "Set OS X defaults"
+echo "Set OS X defaults"
 osascript -e 'tell application "System Preferences" to quit'
 
 ###############################################################################
@@ -450,3 +450,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 for app in "cfprefsd" "Dock" "Finder" "Safari"  "SystemUIServer" "Hyper" "Chrome"; do
   killall "${app}" > /dev/null 2>&1 || true
 done
+
+echo
+echo "********************* OSX Defaults Done *****************************"
+echo

@@ -29,3 +29,7 @@ brew link --force curl
 
 echo "Remove outdated versions from the cellar"
 brew cleanup
+
+echo
+echo "***************** Homebrew Installed / Updated **************************"
+echo

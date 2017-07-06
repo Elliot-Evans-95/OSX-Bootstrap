@@ -6,19 +6,12 @@ echo "****              Adding Applications to Dock.                    ****"
 echo "**********************************************************************"
 echo
 
-dockutil --no-restart --remove all
-dockutil --no-restart --add "/Applications/Finder.app"
-dockutil --no-restart --add "/Applications/Siri.app"
-dockutil --no-restart --add "/Applications/Google Chrome.app"
-dockutil --no-restart --add "/Applications/Hyper.app"
-dockutil --no-restart --add "/Applications/Fantastical 2.app"
-dockutil --no-restart --add "/Applications/OmniFocus.app"
-dockutil --no-restart --add "/Applications/Slack.app"
-dockutil --no-restart --add "/Applications/Discord.app"
-dockutil --no-restart --add "/Applications/Gogland.app"
-dockutil --no-restart --add "/Applications/Webstorm.app"
-dockutil --no-restart --add "/Applications/Sketch.app"
-dockutil --no-restart --add "/Applications/Final Cut Pro.app"
-dockutil --no-restart --add "/Applications/MacPass.app"
+default write com.apple.dock persistant-apps -array-add '<dict><key>title-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Google Chrome.app</string><key>_CFURLStringType</key><integer>0</interger></dict></dict></dict></dict>'
+default write com.apple.dock persistant-apps -array-add '<dict><key>title-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Hyper.app</string><key>_CFURLStringType</key><integer>0</interger></dict></dict></dict></dict>'
+default write com.apple.dock persistant-apps -array-add '<dict><key>title-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Sketch.app</string><key>_CFURLStringType</key><integer>0</interger></dict></dict></dict></dict>'
 
 killall Dock
+
+echo
+echo "********************* Added Apps to Dock *****************************"
+echo
