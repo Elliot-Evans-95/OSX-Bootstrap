@@ -21,6 +21,7 @@ brew doctor
 brew prune
 
 echo "Install Brew formalue"
+cd modules
 brew tap Homebrew/bundle
 brew bundle
 
@@ -29,6 +30,8 @@ brew bundle check
 
 echo "Remove outdated versions from the cellar"
 brew cleanup
+
+cd ..
 
 echo
 echo "***************** Homebrew Installed / Updated **************************"
