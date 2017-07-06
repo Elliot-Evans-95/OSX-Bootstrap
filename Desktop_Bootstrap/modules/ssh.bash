@@ -3,8 +3,6 @@
 osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
 githubAccount="Elliot-Evans-95"
 
-source "./functions.bash"
-
 echo
 echo "**********************************************************************"
 echo "****                   Creating SSH Key.                          ****"
