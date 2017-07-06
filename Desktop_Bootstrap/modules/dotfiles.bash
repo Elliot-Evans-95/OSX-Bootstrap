@@ -9,8 +9,6 @@ echo "****              Cloning dotfiles from repo                      ****"
 echo "**********************************************************************"
 echo
 
-source "functions.bash"
-
 echo "Installing bash dotfiles"
 
 cd $home && git clone https://github.com/${githubAccount}/dotfiles.git

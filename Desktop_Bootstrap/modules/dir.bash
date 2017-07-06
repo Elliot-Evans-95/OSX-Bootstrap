@@ -8,7 +8,7 @@ echo "****              Creating Development Folders.                   ****"
 echo "**********************************************************************"
 echo
 
-if [[ ! -e "~/Sites" ] ; then
+if [[ ! -e "~/Sites" ]] ; then
   mkdir ~/Sites 
   echo "Added Sites to Home Directory"
 fi
