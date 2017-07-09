@@ -16,10 +16,10 @@ modules=(
   zsh
   dotfiles
   brew
-  node
   osx_defaults
   osx_security
   dock
+  node
 )
 
 for module in "${modules[@]}"

@@ -8,6 +8,13 @@ echo "****                  Installing Node from NVM                    ****"
 echo "**********************************************************************"
 echo
 
+# Sets the terminal to be zsh be default from now on
+if [[ $- == *i* ]]; then
+    export SHELL=zsh
+    exec zsh -l
+    source ~/.zshrc
+fi
+
 if test -z "$(nvm ls|grep "node")"; then
   echo "Install latest Node.js version"
   nvm install node
@@ -19,13 +26,6 @@ nvm alias default node
 
 export npm_config_global=true
 export npm_config_loglevel=silent
-
-# Sets the terminal to be zsh be default from now on
-source ~/.zshrc
-if [[ $- == *i* ]]; then
-    export SHELL=zsh
-    exec zsh -l
-fi
 
 echo
 echo "********************* Node & NVM installed *****************************"
