@@ -15,9 +15,9 @@ echo "Checking for SSH key, generating one if it doesn't exist"
 
 echo "Copying public key to clipboard. Paste it into your Github account"
 [[ -f ~/.ssh/id_rsa.pub ]] && pbcopy < ~/.ssh/id_rsa.pub
-pbpaste > $sshKeyFileName
+pbpaste > ~/Desktop/$sshKeyFileName
 open $sshKeyFileName
 
 echo
-echo "*************** SSHKey saved to ${sshKeyFileName} *********************"
+echo "********** SSHKey saved to ${sshKeyFileName} on Desktop ***************"
 echo
