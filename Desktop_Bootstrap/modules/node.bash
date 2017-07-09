@@ -9,11 +9,11 @@ echo "**********************************************************************"
 echo
 
 # Sets the terminal to be zsh be default from now on
-if [[ $- == *i* ]]; then
+#if [[ $- == *i* ]]; then
     export SHELL=zsh
     exec zsh -l
     source ~/.zshrc
-fi
+#fi
 
 if test -z "$(nvm ls|grep "node")"; then
   echo "Install latest Node.js version"
