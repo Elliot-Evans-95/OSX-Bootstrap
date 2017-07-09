@@ -11,14 +11,11 @@ echo
 
 cd $home
 
-git pull https://github.com/${githubAccount}/dotfiles.git
+git init
+git remote add origin https://github.com/${githubAccount}/dotfiles.git
+git pull
 
-ln -sv “~/.dotfiles/git/.bashrc ~
-ln -sv “~/.dotfiles/git/.zshrc ~
-ln -sv “~/.dotfiles/git/.hyper.js ~
-ln -sv “~/.dotfiles/git/.gitconfig” ~
-
-source ~/.bash_profile
+source ~/.bashrc
 
 echo
 echo "********************* dotfiles now added *****************************"
