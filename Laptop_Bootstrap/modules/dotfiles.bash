@@ -2,7 +2,6 @@
 
 osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
 githubAccount="Elliot-Evans-95"
-home="~/"
 
 echo
 echo "**********************************************************************"
@@ -10,8 +9,14 @@ echo "****              Cloning dotfiles from repo                      ****"
 echo "**********************************************************************"
 echo
 
-source "./functions.bash"
+cd $home
 
-echo "Installing bash dotfiles"
+git init
+git remote add origin https://github.com/${githubAccount}/dotfiles.git
+git pull origin master
 
-cd ${home} && git clone https://github.com/${githubAccount}/dotfiles.git
+source ~/.bashrc
+
+echo
+echo "********************* dotfiles now added *****************************"
+echo
