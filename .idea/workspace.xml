@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24d7755d-336b-400f-8c3c-d96d7dcc729b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/Brewfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/brew.bash" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/dir.bash" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/dock.bash" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/brew.bash" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/brew_files.bash" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dir.bash" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dock.bash" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/functions.bash" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ruby.bash" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/01_Setup.bash" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/setup.bash" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Desktop_Bootstrap/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dotfiles.bash" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/dotfiles.bash" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/github.bash" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/github.bash" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/node.bash" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/node.bash" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/osx_defaults.bash" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/osx_defaults.bash" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/osx_security.bash" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/osx_security.bash" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/readme.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/shh.bash" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/ssh.bash" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/zsh.bash" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/modules/zsh.bash" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Desktop_Bootstrap/modules/readme.md" afterPath="$PROJECT_DIR$/Desktop_Bootstrap/readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Laptop_Bootstrap/modules/readme.md" afterPath="$PROJECT_DIR$/Laptop_Bootstrap/readme.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,12 +29,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.bash" pinned="false" current-in-tab="true">
+      <file leaf-file-name="setup.bash" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laptop_Bootstrap/setup.bash">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="465">
+              <caret line="31" column="65" lean-forward="false" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="405">
+                <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Desktop_Bootstrap/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="240">
+                <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -67,6 +76,7 @@
         <option value="$PROJECT_DIR$/Laptop_Bootstrap/modules/readme.md" />
         <option value="$PROJECT_DIR$/Laptop_Bootstrap/modules/osx_security.bash" />
         <option value="$PROJECT_DIR$/Laptop_Bootstrap/modules/osx_defaults.bash" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -184,9 +194,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Laptop_Bootstrap" />
+      <recent name="$PROJECT_DIR$/Desktop_Bootstrap" />
       <recent name="$PROJECT_DIR$/Laptop_Bootstrap/modules" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Laptop_Bootstrap" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Laptop_Bootstrap/modules" />
@@ -295,12 +306,12 @@
       <updated>1499796546971</updated>
       <workItem from="1499796548631" duration="137000" />
       <workItem from="1499796694158" duration="62000" />
-      <workItem from="1499796763386" duration="391000" />
+      <workItem from="1499796763386" duration="820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="590000" />
+    <option name="totallyTimeSpent" value="1019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="13" y="291" width="2880" height="1601" extended-state="0" />
@@ -343,7 +354,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laptop_Bootstrap/modules/readme.md">
+    <entry file="file://$PROJECT_DIR$/Laptop_Bootstrap/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -370,7 +381,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laptop_Bootstrap/modules/readme.md">
+    <entry file="file://$PROJECT_DIR$/Laptop_Bootstrap/readme.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
@@ -405,9 +416,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Laptop_Bootstrap/setup.bash">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="31" column="65" lean-forward="false" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Desktop_Bootstrap/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="405">
+            <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
