@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+OSX_BOOTSTRAP=${OSX_BOOTSTRAP:-"$HOME/OSX-Bootstrap"}
+
 modules=(
   dir
   ssh
