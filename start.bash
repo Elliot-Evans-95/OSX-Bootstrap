@@ -20,9 +20,9 @@ select opt in "${options[@]}" "Quit"; do
     case "$REPLY" in
 
     1 ) echo "You picked $opt which is option $REPLY"
-        bash "$OSX_BOOTSTRAP/Laptop_Bootstrap/modules/setup.bash";;
+        bash "$OSX_BOOTSTRAP/Laptop_Bootstrap/setup.bash";;
     2 ) echo "You picked $opt which is option $REPLY"
-        bash "$OSX_BOOTSTRAP/Desktop_Bootstrap/01_setup.bash";;
+        bash "$OSX_BOOTSTRAP/Desktop_Bootstrap/setup.bash";;
 
     $(( ${#options[@]}+1 )) ) echo "Goodbye!"; break;;
     *) echo "Invalid option. Try another one.";continue;;

@@ -16,7 +16,7 @@ modules=(
 
 for module in "${modules[@]}"
 do
-  bash "$OSX_BOOTSTRAP/modules/$module.bash"
+  bash "$OSX_BOOTSTRAP/Laptop_Bootstrap/modules/$module.bash"
 done
 
 echo
