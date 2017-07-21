@@ -24,7 +24,7 @@ brew prune
 #echo "export PATH=/usr/local/sbin:$PATH" >> ~/.bash_profile
 
 echo "Install Brew formalue"
-cd modules
+cd $OSX_BOOTSTRAP/Laptop_Bootstrap/modules
 brew tap Homebrew/bundle
 brew bundle
 

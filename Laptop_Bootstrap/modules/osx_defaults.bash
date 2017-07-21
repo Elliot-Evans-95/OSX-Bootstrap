@@ -8,7 +8,7 @@ echo "****                Setting OSX Defaults.                         ****"
 echo "**********************************************************************"
 echo
 
-info_echo "Set OS X defaults"
+echo "Set OS X defaults"
 osascript -e 'tell application "System Preferences" to quit'
 
 ###############################################################################
@@ -219,8 +219,8 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
-# Set the icon size of Dock items to 72 pixels
-defaults write com.apple.dock tilesize -int 72
+# Set the icon size of Dock items to 24 pixels
+defaults write com.apple.dock tilesize -int 24
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
