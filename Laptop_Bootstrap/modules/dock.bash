@@ -7,7 +7,7 @@ echo "**********************************************************************"
 echo
 
 # NEED TO INSTALL DOCKUTIL
-# https://github.com/kcrawford/dockutil/releases/tag/2.0.5
+sudo installer -store -pkg "https://github.com/kcrawford/dockutil/releases/download/2.0.5/dockutil-2.0.5.pkg" -target /
 
 # Removes All Dock Applications
 dockutil --remove all --allhomes
