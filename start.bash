@@ -14,7 +14,7 @@ prompt="What Machine are you Bootstrapping:"
 options=("Laptop" "Desktop")
 
 echo "$title"
-PS3="$prompt "
+PS3="$prompt"
 select opt in "${options[@]}" "Quit"; do
 
     case "$REPLY" in

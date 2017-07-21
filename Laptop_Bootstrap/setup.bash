@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 
+OSX_BOOTSTRAP=${OSX_BOOTSTRAP:-"$HOME/OSX-Bootstrap"}
+
 modules=(
   dir
   ssh
-  brew
-  ruby
-  node
-  osx_defaults
-  osx_security
   github
   zsh
   dotfiles
+  brew
+  osx_defaults
+  osx_security
   dock
+  node
 )
 
 for module in "${modules[@]}"
