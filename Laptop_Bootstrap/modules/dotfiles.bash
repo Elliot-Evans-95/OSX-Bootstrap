@@ -11,7 +11,16 @@ echo
 
 cd $home
 
-git init
+if [[ -e "~/.zshrc" ]] ; then
+    rm .zshrc
+    echo "Removed old ZSH config file"
+fi
+
+if [[ -e ".git" ]] ; then
+    git init
+    echo "Added Git if it exists"
+fi
+
 git remote add origin https://github.com/${githubAccount}/dotfiles.git
 git pull --depth=1 origin master
 
