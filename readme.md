@@ -25,9 +25,14 @@ Simply Clone / Download the repo and run the setup bash file
 3. Clone this repo:
 
      ```
-     git clone --depth=1 -b master https://github.com/elliot-evans-95/osx-bootstrap.git
+     git clone --depth=1 -b master https://github.com/elliot-evans-95/osx-bootstrap.git "$HOME"
      ```
      
-4. Run the setup script for your machine
+4. Run the setup script for your machine:
+
+     ```
+     cd osx-bootstrap
+     bash start.bash
+     ```
 
 That's it!
