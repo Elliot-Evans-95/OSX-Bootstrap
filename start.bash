@@ -6,7 +6,7 @@ OSX_BOOTSTRAP=${OSX_BOOTSTRAP:-"$HOME/OSX-Bootstrap"}
 
 if [ ! -d "$OSX_BOOTSTRAP" ]
 then
-  git clone -b master https://github.com/fs/osx-bootstrap.git "$OSX_BOOTSTRAP"
+  git clone --depth=1 -b master https://github.com/elliot-evans-95/osx-bootstrap.git "$HOME/OSX-Bootstrap"
 fi
 
 title="OSX Bootstrap"

@@ -13,7 +13,7 @@ cd $home
 
 git init
 git remote add origin https://github.com/${githubAccount}/dotfiles.git
-git pull origin master
+git pull --depth=1 origin master
 
 source ~/.bashrc
 
