@@ -31,7 +31,7 @@ Simply Clone / Download the repo and run the setup bash file
 4. Run the setup script for your machine:
 
      ```
-     cd osx-bootstrap
+     cd OSX-Bootstrap
      bash start.bash
      ```
 
