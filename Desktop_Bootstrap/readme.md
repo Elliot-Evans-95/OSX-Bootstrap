@@ -16,4 +16,4 @@ In this repo is all files needed to a bootstap a Desktop OSX for development use
 
 ### How to run the Bootstrap
 
-Simply Clone / Download the repo and run the setup bash file
+Clone or download this repo and run the start.bash script
