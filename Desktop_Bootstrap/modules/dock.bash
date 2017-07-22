@@ -8,7 +8,7 @@ echo
 
 # NEED TO INSTALL DOCKUTIL
 curl -LJO "https://github.com/kcrawford/dockutil/releases/download/2.0.5/dockutil-2.0.5.pkg"
-sudo installer -pkg "dockutil-2.0.5.pkg" -target ~/Applications
+sudo installer -pkg "dockutil-2.0.5.pkg" -target /
 
 # Removes All Dock Applications
 dockutil --remove all --allhomes

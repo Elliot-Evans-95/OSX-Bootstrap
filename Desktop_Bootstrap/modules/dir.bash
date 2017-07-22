@@ -13,12 +13,12 @@ if [[ ! -e "~/Sites" ]] ; then
   echo "Added Sites to Home Directory"
 fi
 
-if [[ ! "~/Projects" ]] ; then
+if [[ ! -e "~/Projects" ]] ; then
   mkdir ~/Projects 
   echo "Added Projects to Home Directory"
 fi
 
-if [[ ! "~/Apps" ]] ; then
+if [[ ! -e "~/Apps" ]] ; then
   mkdir ~/Sites 
   mkdir ~/Projects 
   mkdir ~/Apps
