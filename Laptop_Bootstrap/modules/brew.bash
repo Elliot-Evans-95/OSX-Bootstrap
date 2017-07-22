@@ -24,7 +24,7 @@ brew prune
 #echo "export PATH=/usr/local/sbin:$PATH" >> ~/.bash_profile
 
 echo "Install Brew formalue"
-cd $OSX_BOOTSTRAP/Laptop_Bootstrap/modules
+cd Laptop_Bootstrap/modules
 brew tap Homebrew/bundle
 brew bundle
 
@@ -34,6 +34,7 @@ brew bundle check
 echo "Remove outdated versions from the cellar"
 brew cleanup
 
+cd ..
 cd ..
 
 echo
