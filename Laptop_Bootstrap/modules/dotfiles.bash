@@ -11,12 +11,12 @@ echo
 
 cd $home
 
-if [[ -e "~/.zshrc" ]] ; then
+if [[ -f "~/.zshrc" ]] ; then
     rm ~/.zshrc
     echo "Removed old ZSH config file"
 fi
 
-if [[ -e "~/.git" ]] ; then
+if [[ ! -d "~/.git" ]] ; then
     git init
     echo "Added Git if it exists"
 fi
