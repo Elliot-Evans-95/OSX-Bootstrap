@@ -15,5 +15,4 @@ In this repo is all files needed to a bootstap a Laptop OSX for development use
 * Adds applications to Dock from preferance
 
 ### How to run the Bootstrap
-
-Simply Clone / Download the repo and run the setup bash file
+Clone or download this repo and run the start.bash script
