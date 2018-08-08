@@ -1,0 +1,62 @@
+cask_args appdir: "/Applications"
+
+tap "fs/fstool"
+tap "homebrew/services"
+tap "caskroom/cask"
+tap "caskroom/versions"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/dupes"
+tap "homebrew/php"
+tap "homebrew/services"
+tap "homebrew/versions"
+tap "dart-lang/dart"
+
+brew "autoconf"
+brew "automake"
+brew "readline"
+brew "cmake"
+brew "curl", args: ["with-openssl"]
+brew "dnsmasq", restart_service: true
+brew "fish"
+brew "fs-tool"
+brew "git"
+brew "gdbm"
+brew "libgpg-error"
+brew "libksba"
+brew "libtool"
+brew "libyaml"
+brew "mercurial"
+brew "multimarkdown", args: ["HEAD"]
+brew "nginx", args: ["with-http2"], restart_service: true
+brew "nmap"
+brew "pkg-config"
+brew "tree"
+brew "wget"
+
+brew "python"
+
+brew "ios-deploy"
+brew "watchman"
+
+brew "dart-lang/dart/dart", args: ["with-content-shell", "with-dartium"]
+
+brew "antigen"
+brew "zsh-syntax-highlighting"
+
+brew "nvm"
+brew "yarn"
+
+brew "dart"
+brew "dvm"
+
+brew "go"
+brew "dep"
+
+brew "mongodb"
+
+cask "the-unarchiver"
+cask "google-chrome"
+cask "hyper"
+cask "phoenix"
+cask "caffeine"
