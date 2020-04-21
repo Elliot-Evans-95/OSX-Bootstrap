@@ -1,38 +1,62 @@
 # OSX Bootstrap
 
-Creates a development environment in any mac machine just by running one script.
+Creates a Javascript and Go development environment on a mac.
 
 ## Purpose of this project?
 
 * Installation and configuration of Homebrew
 * Creates Development Folders
-* Creates SSH key
-* Configurates GitHub
-* Installs NVM (for node)
-* Updates Ruby to latets version
-* Installs and configures Zsh
-* Configurates OSX defaults and OSX Security Defaults
+* Sets up GitHub (mostly)**
+* Updates Ruby and Python to the latest versions
+* Installs and configures Fish
+* Configures OSX defaults and OSX Security Defaults
 * Adds applications to Dock from preference
 
-### How to use this?
+### Homebrew list
+* "curl"
+* "dep"
+* "fish"
+* "git"
+* "go"
+* "icu4c"
+* "node"
+* "pcre2"
+* "python"
+* "ruby"
+* "starship"
+* "tree"
+* "wget"
+* "yarn"
+* "caffeine"
+* "font-jetbrains-mono"
+* "google-chrome"
+* "hyper"
+* "phoenix"
+* "slack"
+* "the-unarchiver"
 
-Simply Clone / Download the repo and run the setup bash file
+### How to use
 
-### Prefered Setup
+Clone the repo and run the setup bash file
 
-1. Move all your existing apps into the applications folder 
-2. Download the development tools for terminal
-3. Clone this repo:
+### Setup
+
+1. Clone this repo:
 
      ```
      git clone --depth=1 -b master https://github.com/elliot-evans-95/osx-bootstrap.git "$HOME/OSX-Bootstrap"
      ```
      
-4. Run the setup script for your machine:
+2. Run the setup script for your machine:
 
      ```
-     cd OSX-Bootstrap
-     bash start.bash
+     bash $HOME/OSX-Bootstrap/start.bash
      ```
 
-That's it!
+### Contributing
+
+Open an issue with your recommendation or Make a pull request
+
+### Special thanks
+A Thank you to [kcrawford](https://github.com/kcrawford) for creating [dockutil](https://github.com/kcrawford/dockutil) 
+so the dock can be configured

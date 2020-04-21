@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
+RootDir=$PWD
 
 echo
 echo "**********************************************************************"
@@ -9,10 +9,10 @@ echo "**********************************************************************"
 echo
 
 if test ! "$(which brew)"; then
-  echo "Install Homebrew, a good OS X package manager"
+#  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-  echo "Update Homebrew"
+  echo "Homebrew exits, updating Homebrew"
   brew update
 fi
 
@@ -21,7 +21,7 @@ brew doctor
 brew prune
 
 echo "Install Brew formalue"
-cd Laptop_Bootstrap/modules
+cd "$RootDir/modules" || exit
 brew tap Homebrew/bundle
 brew bundle
 
@@ -31,9 +31,10 @@ brew bundle check
 echo "Remove outdated versions from the cellar"
 brew cleanup
 
-cd ..
-cd ..
+cd "$RootDir" || exit
 
 echo
-echo "***************** Homebrew Installed / Updated **************************"
+echo "**********************************************************************"
+echo "****                Homebrew Installed / Updated                  ****"
+echo "**********************************************************************"
 echo

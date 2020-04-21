@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-osx_bootstrap="$(cd "$(dirname "$0")/.." && pwd -P)"
-
 echo
 echo "**********************************************************************"
 echo "****              Configurating OSX Security.                     ****"
@@ -16,5 +14,7 @@ echo "Empty Trash securely by default"
 defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 echo
-echo "********************* OSX Security Updated *****************************"
+echo "**********************************************************************"
+echo "****                  OSX Security Updated.                       ****"
+echo "**********************************************************************"
 echo

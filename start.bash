@@ -2,31 +2,33 @@
 
 set -e
 
-OSX_BOOTSTRAP=${OSX_BOOTSTRAP:-"$HOME/OSX-Bootstrap"}
+# TODO: type out your github and token for dot files?
+#github_user="Elliot-Evans-95"
+#github_email="ell15evans.nuls@googlemail.com"
+#github_token="token"
+#mac_name="name_of_mac"
 
-if [ ! -d "$OSX_BOOTSTRAP" ]
-then
+echo
+echo "**********************************************************************"
+echo "****                   Bootstrapping Machine...                   ****"
+echo "**********************************************************************"
+echo
+
+if [[ ! -e "$HOME/OSX-Bootstrap" ]] ; then
+  echo "This Script is not located in the $HOME dir"
+  echo "Cloning..."
   git clone --depth=1 -b master https://github.com/elliot-evans-95/osx-bootstrap.git "$HOME/OSX-Bootstrap"
+  bash "$HOME/OSX-Bootstrap/start.bash"
+else
+  bash "$OSX_BOOTSTRAP/setup.bash"
 fi
 
-title="OSX Bootstrap"
-prompt="What Machine are you Bootstrapping:"
-options=("Laptop" "Desktop")
+echo
+echo "**********************************************************************"
+echo "**** Mac Bootstrap script complete! Please restart your computer. ****"
+echo "**********************************************************************"
+echo
 
-echo "$title"
-PS3="$prompt"
-select opt in "${options[@]}" "Quit"; do
-
-    case "$REPLY" in
-
-    1 ) echo "You picked $opt which is option $REPLY"
-        bash "$OSX_BOOTSTRAP/Laptop_Bootstrap/setup.bash";;
-    2 ) echo "You picked $opt which is option $REPLY"
-        bash "$OSX_BOOTSTRAP/Desktop_Bootstrap/setup.bash";;
-
-    $(( ${#options[@]}+1 )) ) echo "Goodbye!"; break;;
-    *) echo "Invalid option. Try another one.";continue;;
-
-    esac
-
-done
+echo "The file 'github_ssh_key.txt' can been generated at $HOME"
+echo "Copy its contents to complete the github setup"
+echo "Info: https://help.github.com/articles/generating-ssh-keys"
