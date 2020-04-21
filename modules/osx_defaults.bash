@@ -14,13 +14,10 @@ osascript -e 'tell application "System Preferences" to quit'
 
 # Set computer name (as done via System Preferences → Sharing)
 
-echo '##### Please enter your name for your Mac: '
-read -r hostname
-
-sudo scutil --set ComputerName "$hostname"
-sudo scutil --set HostName "$hostname"
-sudo scutil --set LocalHostName "$hostname"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$hostname"
+sudo scutil --set ComputerName "$mac_name"
+sudo scutil --set HostName "$mac_name"
+sudo scutil --set LocalHostName "$mac_name"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$mac_name"
 
 # Set highlight color to green
 # TODO: User gets to select which color they want

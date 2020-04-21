@@ -1,7 +1,5 @@
 #!/bin/bash
 
-github_user="Elliot-Evans-95"
-github_email="ell15evans.nuls@googlemail.com"
 github_ssh_key="github_ssh_key.txt"
 
 echo
@@ -13,13 +11,6 @@ echo
 if [[ -f ~/.ssh/id_rsa ]]; then
   rm ~/.ssh/id_rsa
 fi
-
-echo 'Please enter your github username: '
-read -r github_user
-echo 'Please enter your github email address: '
-read -r github_email
-echo 'Please enter your github token: '
-read -r github_token
 
 echo 'Setting up Github Configuration: '
 git config --global user.name "$github_user"

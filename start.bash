@@ -2,12 +2,6 @@
 
 set -e
 
-# TODO: type out your github and token for dot files?
-#github_user="Elliot-Evans-95"
-#github_email="ell15evans.nuls@googlemail.com"
-#github_token="token"
-#mac_name="name_of_mac"
-
 echo
 echo "**********************************************************************"
 echo "****                   Bootstrapping Machine...                   ****"
