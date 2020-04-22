@@ -2,6 +2,12 @@
 
 Creates a Javascript and Go development environment on a mac.
 
+<p align="center">
+ <a href="https://www.buymeacoffee.com/elliotevans">
+   <img width="450" height="225" src="https://i.imgur.com/urT5zdX.png">
+ </a>
+</p>
+
 ## Purpose of this project?
 
 * Installation and configuration of Homebrew
