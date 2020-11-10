@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+date_of_creation=$(date +'%F')
+custom_name="roadblock"
+mac_name="{$date_of_creation}_{$custom_name}"
+highlight_color="0.764700 0.976500 0.568600"
+firstSetup=true
+
 echo
 echo "**********************************************************************"
 echo "****                Setting OSX Defaults.                         ****"
@@ -21,7 +27,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 
 # Set highlight color to green
 # TODO: User gets to select which color they want
-defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
+defaults write NSGlobalDomain AppleHighlightColor -string "$highlight_color"
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
@@ -175,8 +181,8 @@ defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # Enable subpixel font rendering on non-Apple LCDs
-# TODO: Make into sperate command?
-#defaults write NSGlobalDomain AppleFontSmoothing -int 2
+# TODO: Make into separate command?
+# defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 ###############################################################################
 # Finder                                                                      #
@@ -291,8 +297,9 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
-# TODO: create bash script just for this
-#defaults write com.apple.dock persistent-apps -array
+if [[ -e $firstSetup ]]; then
+  defaults write com.apple.dock persistent-apps -array
+fi
 
 # Do not show only open applications in the Dock
 defaults write com.apple.dock static-only -bool false

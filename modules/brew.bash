@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 RootDir=$PWD
+app_store_email="elliot@mercarto.com"
 
 echo
 echo "**********************************************************************"
@@ -9,7 +10,6 @@ echo "**********************************************************************"
 echo
 
 if test ! "$(which brew)"; then
-#  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
   echo "Homebrew exits, updating Homebrew"

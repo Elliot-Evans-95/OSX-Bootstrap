@@ -1,5 +1,8 @@
 #!/bin/bash
 
+github_user="Elliot-Evans-95"
+github_email="elliot@mercarto.com"
+github_token="TOKEN_HERE"
 github_ssh_key="github_ssh_key.txt"
 
 echo
