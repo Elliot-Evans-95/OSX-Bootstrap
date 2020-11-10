@@ -16,6 +16,8 @@ fi
 git clone https://github.com/${github_user}/dotfiles.git "$HOME"
 
 if [[ -f ~/.config/fish/config.fish ]] ; then
+    # This is needed: https://github.com/koalaman/shellcheck/wiki/SC1090
+    # shellcheck source=$HOME/.config/fish/config.fish
     source "$HOME/.config/fish/config.fish"
     echo "Sourcing config file for fish setup"
 fi

@@ -19,27 +19,9 @@ Creates a Javascript and Go development environment on a mac.
 * Adds applications to Dock from preference
 
 ### Homebrew list
-* "curl"
-* "dep"
-* "fish"
-* "git"
-* "go"
-* "icu4c"
-* "node"
-* "pcre2"
-* "python"
-* "ruby"
-* "starship"
-* "tree"
-* "wget"
-* "yarn"
-* "caffeine"
-* "font-jetbrains-mono"
-* "google-chrome"
-* "hyper"
-* "phoenix"
-* "slack"
-* "the-unarchiver"
+- brew packages
+- cask for apps
+- mas for app store apps
 
 ### How to use
 
