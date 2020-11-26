@@ -256,9 +256,6 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
-# Enable the MacBook Air SuperDrive on any Mac
-sudo nvram boot-args="mbasd=1"
-
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 

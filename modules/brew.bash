@@ -9,6 +9,9 @@ echo "****                  Installing Homebrew.                        ****"
 echo "**********************************************************************"
 echo
 
+echo "Checking for Xcode permission..."
+xcodebuild -license accept
+
 if test ! "$(which brew)"; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else

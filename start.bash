@@ -12,9 +12,11 @@ if [[ ! -e "$HOME/OSX-Bootstrap" ]] ; then
   echo "This Script is not located in the $HOME dir"
   echo "Cloning..."
   git clone --depth=1 -b master https://github.com/elliot-evans-95/osx-bootstrap.git "$HOME/OSX-Bootstrap"
-  bash "$HOME/OSX-Bootstrap/start.bash"
+  cd "$HOME/OSX-Bootstrap"
+  bash "setup.bash"
 else
-  bash "$OSX_BOOTSTRAP/setup.bash"
+  cd "$HOME/OSX-Bootstrap"
+  bash "setup.bash"
 fi
 
 echo
