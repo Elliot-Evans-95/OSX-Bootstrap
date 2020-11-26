@@ -24,6 +24,7 @@ modules=(
   osx_defaults
   osx_security
   dock
+  extra
 )
 
 for module in "${modules[@]}"

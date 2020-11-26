@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
+# Sourcing the names
+. ./setup.bash
+
 date_of_creation=$(date +'%F')
-custom_name="roadblock"
-mac_name="{$date_of_creation}_{$custom_name}"
+custom_name=${mac_name}
+mac_name_with_date="${date_of_creation}_${custom_name}"
 highlight_color="0.764700 0.976500 0.568600"
 firstSetup=true
 
@@ -20,10 +23,10 @@ osascript -e 'tell application "System Preferences" to quit'
 
 # Set computer name (as done via System Preferences → Sharing)
 
-sudo scutil --set ComputerName "$mac_name"
-sudo scutil --set HostName "$mac_name"
-sudo scutil --set LocalHostName "$mac_name"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$mac_name"
+sudo scutil --set ComputerName "$mac_name_with_date"
+sudo scutil --set HostName "$mac_name_with_date"
+sudo scutil --set LocalHostName "$mac_name_with_date"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$mac_name_with_date"
 
 # Set highlight color to green
 # TODO: User gets to select which color they want
